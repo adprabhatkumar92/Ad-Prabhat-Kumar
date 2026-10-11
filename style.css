@@ -20,6 +20,16 @@ body {
     color: white;
     padding: 80px 20px;
 }
+    /* Hero Section Profile Image */
+.hero-profile-img {
+    width: 150px;            /* फोटो की चौड़ाई */
+    height: 150px;           /* फोटो की लंबाई */
+    object-fit: cover;       /* फोटो खिंचेगी नहीं, बिल्कुल सही दिखेगी */
+    border-radius: 50%;      /* फोटो को गोल (Circle) बनाने के लिए */
+    border: 4px solid #ffffff; /* फोटो के चारों ओर सफेद Border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* सुंदर Shadow Effect */
+
+}
 
 footer {
     background-color: var(--primary-color);
