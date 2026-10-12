@@ -45,25 +45,39 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="bg-white p-4 rounded shadow-sm h-100">
-                    <h4>Quick Inquiry</h4>
-                    <form onsubmit="event.preventDefault(); alert('Aapka sandesh mil gaya hai, jald hi sampark kiya jayega.');">
-                        <div class="mb-3">
-                            <label class="form-label">Aapka Naam</label>
-                            <input type="text" class="form-control" required placeholder="Full Name">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Mobile Number</label>
-                            <input type="tel" class="form-control" required placeholder="Phone Number">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Samasya / Message</label>
-                            <textarea class="form-control" rows="3" required placeholder="Briefly describe your case/query"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-danger w-100">Send Message</button>
-                    </form>
-                </div>
+    <div class="bg-white p-4 rounded shadow-sm h-100 border-top border-danger border-4">
+        <h4 class="fw-bold mb-3 text-dark">Quick Inquiry / शीघ्र संपर्क</h4>
+        
+        <!-- Formspree Action Added -->
+        <form action="https://formspree.io/f/adprabhatkumar92@gmail.com" method="POST">
+            
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Aapka Naam / आपका नाम</label>
+                <input type="text" name="Name" class="form-control" required placeholder="Full Name">
             </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Mobile Number / मोबाइल नंबर</label>
+                <input type="tel" name="Phone" class="form-control" required placeholder="Phone Number" pattern="[0-9]{10}">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Email ID / ईमेल (Optional)</label>
+                <input type="email" name="_replyto" class="form-control" placeholder="Your Email Address">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Samasya / Message / कानूनी विवरण</label>
+                <textarea name="Message" class="form-control" rows="3" required placeholder="Briefly describe your case/query"></textarea>
+            </div>
+
+            <!-- Custom Subject line in email -->
+            <input type="hidden" name="_subject" value="New Legal Inquiry from Website - Adv. Prabhat Kumar">
+
+            <button type="submit" class="btn btn-danger w-100 fw-bold py-2">Send Message / संदेश भेजें</button>
+        </form>
+    </div>
+</div>
         </div>
     </div>
 
