@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Adv. Prabhat Kumar Rao</title>
+    <title>Legal Services & Expertise | Adv. Prabhat Kumar Rao</title>
+    <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .service-card {
+            transition: transform 0.3s ease, shadow 0.3s ease;
+            border-top: 4px solid #dc3545; /* Red border top */
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important;
+        }
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: #f8f9fa;
+            color: #dc3545;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-light">
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Adv. Prabhat Kumar Rao</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -26,42 +52,143 @@
         </div>
     </nav>
 
+    <!-- Header Section -->
+    <header class="bg-dark text-white py-5 text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">विधिक सेवाएँ एवं विशेषज्ञता</h1>
+            <p class="lead text-light">इलाहाबाद हाईकोर्ट, मऊ एवं बलिया दीवानी न्यायालय में सम्पूर्ण कानूनी समाधान</p>
+        </div>
+    </header>
+
+    <!-- Services Grid Section -->
     <div class="container py-5">
-        <h2 class="mb-4 border-bottom pb-2">Core Competencies & Legal Services</h2>
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark">हमारी प्रमुख कानूनी सेवाएँ (Core Practice Areas)</h2>
+            <div class="bg-danger mx-auto" style="height: 3px; width: 80px;"></div>
+        </div>
+
         <div class="row g-4">
-            <div class="col-md-6">
-                <div class="bg-white p-4 rounded shadow-sm h-100">
-                    <h3 class="text-danger h5">Litigation & Court Pleading</h3>
-                    <p>Managing writ petitions, civil/criminal revisions, appeals, procedural applications in Allahabad High Court, alongside civil and criminal litigation in Mau & Ballia District Courts[cite: 1].</p>
+
+            <!-- 1. Civil Cases -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100 service-card">
+                    <div class="icon-box"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3 class="h5 fw-bold text-dark">सिविल मामला (Civil Litigation)</h3>
+                    <p class="text-muted small mt-2">
+                        भूमि एवं संपत्ति विवाद, जमीन की नाप-जोख, स्थायी निषेधाज्ञा (Stay Order), बंटवारा (Partition Suit), कब्जा बहाली एवं घोषणात्मक मुकदमों (Declaratory Suits) की प्रभावी पैरवी।
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="bg-white p-4 rounded shadow-sm h-100">
-                    <h3 class="text-danger h5">Legal Drafting & Contract Review</h3>
-                    <p>Precise drafting of pleadings, plaints, written statements, legal notices, affidavits, terms of service, and commercial/tech contracts[cite: 1].</p>
+
+            <!-- 2. Criminal & Bail Matters -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100 service-card">
+                    <div class="icon-box"><i class="fa-solid fa-handcuffs"></i></div>
+                    <h3 class="h5 fw-bold text-dark">फौजदारी एवं जमानत (Criminal & Bail)</h3>
+                    <p class="text-muted small mt-2">
+                        अग्रिम जमानत (Anticipatory Bail), नियमित जमानत (Regular Bail), पुलिस पूछताछ व एफआईआर बचाव, तथा सेशन कोर्ट से लेकर हाईकोर्ट तक आपराधिक मामलों की मजबूती से पैरवी।
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="bg-white p-4 rounded shadow-sm h-100">
-                    <h3 class="text-danger h5">Cyber Law & Data Privacy</h3>
-                    <p>Specialized advisory on data privacy regulations, IT laws, cyber security standards, compliance frameworks, and electronic discovery (e-Discovery)[cite: 1].</p>
+
+            <!-- 3. Discharge & FIR Quashing -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100 service-card">
+                    <div class="icon-box"><i class="fa-solid fa-file-circle-xmark"></i></div>
+                    <h3 class="h5 fw-bold text-dark">FIR निरस्तीकरण व डिस्चार्ज (Quashing & Discharge)</h3>
+                    <p class="text-muted small mt-2">
+                        झूठी एफआईआर (FIR Quashing) निरस्त कराना, धारा 482 CrPC/BNSS याचिका, तथा ट्रायल कोर्ट में डिस्चार्ज आवेदन (Discharge Application) दाखिल कर केस खारिज कराना।
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="bg-white p-4 rounded shadow-sm h-100">
-                    <h3 class="text-danger h5">Legal Tech & Digital Operations</h3>
-                    <p>Streamlining case records, digital case tracking databases, legal data management, and document automation workflows[cite: 1].</p>
+
+            <!-- 4. Revenue & Dakhil Kharij -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100 service-card">
+                    <div class="icon-box"><i class="fa-solid fa-building-columns"></i></div>
+                    <h3 class="h5 fw-bold text-dark">राजस्व एवं दाखिल-खारिज (Revenue & Mutation)</h3>
+                    <p class="text-muted small mt-2">
+                        दाखिल-खारिज (Mutation/Dakhil Kharij), खतौनी दुरुस्ती, नाम परिवर्तन, भूमि पैमाइश, एवं उत्तर प्रदेश राजस्व संहिता (UP Revenue Code) के तहत तहसील व जिलाधिकारी न्यायालय में मामले।
+                    </p>
                 </div>
             </div>
+
+            <!-- 5. Cheque Bounce -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100 service-card">
+                    <div class="icon-box"><i class="fa-solid fa-money-check-dollar"></i></div>
+                    <h3 class="h5 fw-bold text-dark">चेक बाउंस मामले (Cheque Bounce - NI Act 138)</h3>
+                    <p class="text-muted small mt-2">
+                        चेक अनादर (Cheque Bounce) होने पर कानूनी नोटिस (Demand Notice) भेजने, कोर्ट में परिवाद (Complaint) दायर करने एवं पैसे की त्वरित वसूली के लिए प्रभावी पैरवी।
+                    </p>
+                </div>
+            </div>
+
+            <!-- 6. Accident Claim (MACT) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100 service-card">
+                    <div class="icon-box"><i class="fa-solid fa-car-burst"></i></div>
+                    <h3 class="h5 fw-bold text-dark">दुर्घटना क्लेम (Accident Claim - MACT)</h3>
+                    <p class="text-muted small mt-2">
+                        सड़क दुर्घटनाओं में मोटर दुर्घटना दावा अधिकरण (MACT) के तहत मुआवजा/क्लेम प्राप्त करने एवं बीमा कंपनियों से उचित हर्जाना दिलाने हेतु कानूनी मदद।
+                    </p>
+                </div>
+            </div>
+
+            <!-- 7. High Court Writ Petitions -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100 service-card">
+                    <div class="icon-box"><i class="fa-solid fa-gavel"></i></div>
+                    <h3 class="h5 fw-bold text-dark">हाईकोर्ट रिट याचिकाएं (Writ Petitions)</h3>
+                    <p class="text-muted small mt-2">
+                        इलाहाबाद हाईकोर्ट में रिट याचिकाएं (Writ Mandamus, Certiorari, Habeas Corpus), प्रशासनिक मनमानी के खिलाफ रिट एवं जनहित याचिका (PIL) की ड्राफ्टिंग व पैरवी।
+                    </p>
+                </div>
+            </div>
+
+            <!-- 8. Will & Agreements -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100 service-card">
+                    <div class="icon-box"><i class="fa-solid fa-file-contract"></i></div>
+                    <h3 class="h5 fw-bold text-dark">वसीयत एवं अनुबंध (Will & Agreements)</h3>
+                    <p class="text-muted small mt-2">
+                        वसीयत (Will Draft), पावर ऑफ अटॉर्नी (GPA/SPA), पार्टनरशिप डीड, बिजनेस एग्रीमेंट तथा विभिन्न प्रकार के कानूनी समझौतों का कानूनी प्रारूप तैयार करना।
+                    </p>
+                </div>
+            </div>
+
+            <!-- 9. Rent Deed & Lease Drafting -->
+            <div class="col-md-6 col-lg-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100 service-card">
+                    <div class="icon-box"><i class="fa-solid fa-house-user"></i></div>
+                    <h3 class="h5 fw-bold text-dark">रेंट डीड एवं लीज (Rent Deed & Lease)</h3>
+                    <p class="text-muted small mt-2">
+                        किरायानामा (Rent Agreement / Rent Deed), लीज एग्रीमेंट, मकान मालिक-किरायेदार विवाद, बेदखली नोटिस एवं किराया वसूली हेतु कानूनी ड्राफ्टिंग व समाधान।
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <footer class="text-center py-4">
+    <!-- Call to Action Section -->
+    <section class="bg-white py-5 border-top">
+        <div class="container text-center">
+            <h3 class="fw-bold mb-3">क्या आपको किसी कानूनी मामले में परामर्श चाहिए?</h3>
+            <p class="text-muted mb-4">आज ही अपने मामले के उचित कानूनी समाधान के लिए संपर्क करें।</p>
+            <a href="contact.html" class="btn btn-danger btn-lg px-4"><i class="fa-solid fa-phone me-2"></i>संपर्क करें (Contact Advocate)</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Prabhat Kumar, Advocate. All Rights Reserved.</p>
+            <p class="mb-1">&copy; 2026 Advocate Prabhat Kumar Rao. All Rights Reserved.</p>
+            <p class="small text-muted mb-0">इलाहाबाद हाईकोर्ट | मऊ दीवानी न्यायालय | बलिया दीवानी न्यायालय</p>
         </div>
     </footer>
 
+    <!-- Bootstrap 5 JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
